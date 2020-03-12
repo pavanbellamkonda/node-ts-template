@@ -8,7 +8,8 @@
     "build": "npm run clean && tsc",
     "test": "jest --watchAll",
     "coverage": "jest --coverage --coverageDirectory=coverage",
-    "lint": "eslint . --ext .ts --fix"
+    "lint": "eslint . --ext .ts --fix",
+    "start": "npm run build && node dist/index.js"
   },
   "author": "Pavan Bellamkonda <>",
   "license": "ISC",
