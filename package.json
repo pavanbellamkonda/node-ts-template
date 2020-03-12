@@ -7,13 +7,18 @@
     "clean": "rm -rf dist",
     "build": "npm run clean && tsc",
     "test": "jest --watchAll",
-    "coverage": "jest --coverage --coverageDirectory=coverage"
+    "coverage": "jest --coverage --coverageDirectory=coverage",
+    "lint": "eslint . --ext .ts --fix"
   },
   "author": "Pavan Bellamkonda <>",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^25.1.4",
     "@types/node": "^13.9.0",
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "@typescript-eslint/parser": "^2.23.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-jest": "^23.8.2",
     "jest": "^25.1.0",
     "jest-junit": "^10.0.0",
     "nodemon": "^2.0.2",
