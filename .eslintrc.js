@@ -10,7 +10,8 @@ module.exports = {
 	],
 	rules: {
 		quotes: ['warn', 'single'],
-		indent: ['warn', 2]
+		indent: ['warn', 2],
+		'@typescript-eslint/no-use-before-define': 'off'
 	},
 	globals: {
 		module: 'writable'
