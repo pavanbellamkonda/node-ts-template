@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Template for a node project using Typescript",
   "scripts": {
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc"
   },
   "author": "Pavan Bellamkonda <>",
   "license": "ISC",
