@@ -5,14 +5,23 @@
   "scripts": {
     "dev": "nodemon",
     "clean": "rm -rf dist",
-    "build": "npm run clean && tsc"
+    "build": "npm run clean && tsc",
+    "test": "jest --watchAll",
+    "coverage": "jest --coverage --coverageDirectory=coverage"
   },
   "author": "Pavan Bellamkonda <>",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^25.1.4",
     "@types/node": "^13.9.0",
+    "jest": "^25.1.0",
+    "jest-junit": "^10.0.0",
     "nodemon": "^2.0.2",
+    "ts-jest": "^25.2.1",
     "ts-node": "^8.6.2",
     "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "uuid": "^7.0.2"
   }
 }
